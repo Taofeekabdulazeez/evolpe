@@ -29,7 +29,7 @@ function Companies() {
           </div>
           <div className="px-3 py-6 bg-white rounded-md shadow-[4px_4px_0px_0px_#000]">
             <img
-              src="../../public/static/images/usa-today.png"
+              src="../../public/usa-today.png"
               alt="featured in logo"
               className="block w-[60%] mx-auto brightness-0"
             />
