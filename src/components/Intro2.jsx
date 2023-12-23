@@ -6,7 +6,7 @@ function Intro2() {
           <span className="inline-block bg-[#D995451A] tracking-widest text-[rgb(239,124,0)] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">
             Email efficiency
           </span>
-          <h1 className="text-[3rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
+          <h1 className="text-[2.4rem] sm:text-[3rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
             Schedule a consultation with an eVolpe expert
           </h1>
           <p className="text-[1.25rem] font-medium text-[#5B5675] mb-6">

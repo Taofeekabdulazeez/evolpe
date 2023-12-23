@@ -28,7 +28,7 @@ function Header() {
   return (
     <header
       ref={ref}
-      className={`flex items-center justify-between py-6 px-16 w-full`}
+      className={`flex items-center justify-between py-6 px-6 sm:px-16 w-full`}
     >
       <Logo />
       <Nav />

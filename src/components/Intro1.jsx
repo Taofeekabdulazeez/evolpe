@@ -1,12 +1,12 @@
 function Intro1() {
   return (
-    <section className="py-[3rem]">
+    <section className="py-[1rem] sm:py-[2rem]">
       <div className="grid sm:grid-cols-[1fr_.7fr] w-[85%] m-auto items-center gap-9">
         <div>
           <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">
             Email efficiency
           </span>
-          <h1 className="text-[3.6rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
+          <h1 className="text-[3rem] sm:text-[3.6rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
             Your partner in customer-experience implementations
           </h1>
           <p className="text-[1.25rem] font-medium text-[#5B5675] mb-6">
