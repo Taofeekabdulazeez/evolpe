@@ -1,7 +1,7 @@
 function Intro2() {
   return (
     <section className="py-[3rem]">
-      <div className="grid grid-cols-[1fr_.8fr] w-[85%] m-auto max-w-[130rem] items-center gap-20">
+      <div className="grid sm:grid-cols-[1fr_.8fr] w-[85%] m-auto max-w-[130rem] items-center gap-20">
         <div>
           <span className="inline-block bg-[#D995451A] tracking-widest text-[rgb(239,124,0)] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">
             Email efficiency
