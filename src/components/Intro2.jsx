@@ -26,7 +26,7 @@ function Intro2() {
             <div className="triangle-t"></div>
             <img
               className="block w-[100%]"
-              src="../../public/consult.jpg"
+              src="consult.jpg"
               alt="exited customer"
             />
             <div className="triangle-b"></div>
