@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-black text-white py-16">
       <div className="w-[80%] mx-auto">
         <img
-          src="../../public/footer-logo.svg"
+          src="footer-logo.svg"
           alt="logo"
           className="block mx-auto h-[5rem] mb-6"
         />
