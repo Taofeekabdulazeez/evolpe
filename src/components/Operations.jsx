@@ -5,7 +5,7 @@ function Operations() {
         <h2 className="text-center text-[2rem] font-semibold mb-8">
           Get Support at every stage of implementation
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-3 gap-8">
           <div className="text-center">
             <span className="inline-block mb-3">
               <svg

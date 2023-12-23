@@ -2,7 +2,7 @@ import ButtonDropdown from "./ButtonDropdown";
 
 function Nav() {
   return (
-    <nav className="flex items-center justify-between gap-24">
+    <nav className="hidden sm:flex items-center justify-between gap-24">
       <ul className="flex items-center gap-6">
         <li>
           <ButtonDropdown>Systems</ButtonDropdown>
