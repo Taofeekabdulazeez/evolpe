@@ -25,7 +25,7 @@ function Footer() {
             Learn more
           </a>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-col sm:flex-row gap-8">
           <p>© 2023 evolpe Inc. Copyright and rights reserved</p>
           <p>Terms and Condtions - Privacy policy</p>
         </div>

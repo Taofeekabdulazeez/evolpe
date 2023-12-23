@@ -9,7 +9,7 @@ function Accordion() {
   };
 
   return (
-    <ul className="grid grid-cols-1 w-[75%] mx-auto divide-y">
+    <ul className="grid grid-cols-1 w-[90%] mx-auto divide-y">
       <AccordionItem
         index={0}
         onClick={() => handleClickedItem(0)}
