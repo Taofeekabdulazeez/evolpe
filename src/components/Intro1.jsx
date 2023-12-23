@@ -31,7 +31,7 @@ function Intro1() {
           <div className="bg-blue-100 w-[100%] h-full rounded-t-full relative overflow-hidden">
             <img
               className="block absolute bottom-[11%] w-[] scale-[1.4]"
-              src="../../public/hero-removebg-preview.png"
+              src="hero-removebg-preview.png"
               alt="exited customer"
             />
           </div>
