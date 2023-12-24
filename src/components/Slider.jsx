@@ -22,7 +22,7 @@ function Slider() {
   return (
     <>
       <div
-        className={`flex sm:gap-6 relative sm:static border-2 h-[12rem]`}
+        className={`flex sm:gap-6 relative sm:static h-[12rem]`}
         onTouchStart={(event) => {
           setStartPosition(event.touches[0].pageX);
         }}
