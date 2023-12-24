@@ -1,6 +1,6 @@
 function Companies() {
   return (
-    <section className="bg-[#F5F9FA] py-9">
+    <section className="bg-[#F5F9FA] py-9 my-[6rem] sm:mt-0">
       <div className="w-[80%] mx-auto">
         <p className="text-center text-md text-black font-semibold mb-6">
           We have already helped these companies. Click to see how!

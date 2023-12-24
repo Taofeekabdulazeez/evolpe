@@ -1,13 +1,13 @@
 function Operations() {
   return (
-    <section className="py-9">
+    <section className="pb-[9rem]">
       <div className="w-[80%] mx-auto">
         <h2 className="text-center text-[2rem] font-semibold mb-8">
           Get Support at every stage of implementation
         </h2>
-        <div className="grid sm:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-3 sm:gap-8 gap-[6rem]">
           <div className="text-center">
-            <span className="inline-block mb-3">
+            <span className="inline-flex mb-3 w-12 h-12 bg-orange-100 items-center justify-center rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -29,7 +29,7 @@ function Operations() {
             </p>
           </div>
           <div className="text-center">
-            <span className="inline-block mb-3">
+            <span className="inline-flex mb-3 w-12 h-12 bg-orange-100 items-center justify-center rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -54,7 +54,7 @@ function Operations() {
             </p>
           </div>
           <div className="text-center">
-            <span className="inline-block mb-3">
+            <span className="inline-flex mb-3 w-12 h-12 bg-orange-100 items-center justify-center rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

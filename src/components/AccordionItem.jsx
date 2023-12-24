@@ -1,7 +1,7 @@
 function AccordionItem({ isOpen, onClick }) {
   return (
     <li className="pt-8 pb-4">
-      <div className="flex items-center justify-between cursor-pointer pb-4">
+      <div className="grid grid-cols-[1fr_auto] items-center justify-between cursor-pointer pb-4">
         <h4 className="text font-semibold">
           How is the system implemented? What are it’s stages?
         </h4>

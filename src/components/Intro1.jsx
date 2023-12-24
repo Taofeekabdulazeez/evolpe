@@ -1,6 +1,6 @@
 function Intro1() {
   return (
-    <section className="py-[1rem] sm:py-[2rem]">
+    <section className="py-[1rem] sm:py-[2rem] sm:pb-[6rem]">
       <div className="grid sm:grid-cols-[1fr_.7fr] w-[85%] m-auto items-center gap-16 sm:gap-9">
         <div>
           <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">

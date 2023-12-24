@@ -9,6 +9,10 @@ function Slider() {
   const minSlide = 0;
   const maxSlide = 2; // 0 based
 
+  // document.getElementById('id').textContent = 'updated';
+
+  // useEffect(function () { }, []);
+
   return (
     <>
       <div className={`flex sm:gap-6 relative`}>
