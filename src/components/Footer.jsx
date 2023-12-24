@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-black text-white py-16">
+    <footer className="bg-[#1A202C] text-white py-16">
       <div className="w-[80%] mx-auto">
         <img
           src="footer-logo.svg"

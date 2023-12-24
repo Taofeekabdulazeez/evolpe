@@ -6,18 +6,36 @@ function isMobileView() {
 
 function Slider() {
   const [index, setIndex] = useState(0);
+  const [startPosition, setStartPosition] = useState(null);
+  const [slideDistance, setSlideDistance] = useState(null);
   const minSlide = 0;
   const maxSlide = 2; // 0 based
 
-  // document.getElementById('id').textContent = 'updated';
+  const nextSlide = function () {
+    setIndex((index) => (index === maxSlide ? maxSlide : index + 1));
+  };
 
-  // useEffect(function () { }, []);
+  const prevSlide = function () {
+    setIndex((index) => (index === minSlide ? minSlide : index - 1));
+  };
 
   return (
     <>
-      <div className={`flex sm:gap-6 relative`}>
+      <div
+        className={`flex sm:gap-6 relative sm:static border-2 h-[12rem]`}
+        onTouchStart={(event) => {
+          setStartPosition(event.touches[0].pageX);
+        }}
+        onTouchMove={(event) => {
+          setSlideDistance(event.touches[0].pageX);
+        }}
+        onTouchEnd={() => {
+          if (startPosition > 200 && slideDistance < 280) nextSlide();
+          if (startPosition < 200 && slideDistance > 200) prevSlide();
+        }}
+      >
         <div
-          className={`p-4 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
+          className={`p-4 top-0 left-0 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
           style={{
             transform: `translate(${(0 - index) * 105}%)`,
           }}
@@ -52,22 +70,10 @@ function Slider() {
             employees?
           </p>
         </div>
-        <div className="absolute flex justify-center items-center gap-6 bottom-0">
-          <button
-            onClick={() => {
-              setIndex((index) => (index === minSlide ? minSlide : index - 1));
-            }}
-          >
-            👈
-          </button>
-          <button
-            onClick={() => {
-              setIndex((index) => (index === maxSlide ? maxSlide : index + 1));
-            }}
-          >
-            👉
-          </button>
-        </div>
+      </div>
+      <div className="flex justify-center items-center gap-6 bottom-0">
+        <button onClick={prevSlide}>👈</button>
+        <button onClick={nextSlide}>👉</button>
       </div>
     </>
   );
