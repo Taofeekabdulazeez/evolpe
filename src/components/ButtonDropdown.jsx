@@ -12,7 +12,7 @@ function ButtonDropdown({ children }) {
         viewBox="0 0 24 24"
         strokeWidth={2}
         stroke="currentColor"
-        className="h-[20px] stroke-slate-700"
+        className="h-[18px] stroke-slate-700"
       >
         <path
           strokeLinecap="round"

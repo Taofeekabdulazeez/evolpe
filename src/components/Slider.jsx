@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-function isMobileView() {
-  return window.matchMedia("(max-width: 35em)").matches;
-}
-
 function Slider() {
   const [index, setIndex] = useState(0);
   const [startPosition, setStartPosition] = useState(null);
@@ -22,7 +18,7 @@ function Slider() {
   return (
     <>
       <div
-        className={`flex sm:gap-6 relative sm:static h-[12rem]`}
+        className={`flex sm:gap-6 relative sm:static h-[13rem]`}
         onTouchStart={(event) => {
           setStartPosition(event.touches[0].pageX);
         }}
@@ -40,7 +36,13 @@ function Slider() {
             transform: `translate(${(0 - index) * 105}%)`,
           }}
         >
-          <div className="h-20 bg-slate-200 mb-4"></div>
+          <div className="h-24 bg-slate-200 mb-4">
+            <img
+              className="bg-cover h-[100%] w-[100%]"
+              src="lowcode.jpg"
+              alt="Artificial Intelligence"
+            />
+          </div>
           <p className="text-sm font-semibold text-stone-500">
             Low-Code platform recommended by specialists. Market analysis
             results for 2023
@@ -52,7 +54,13 @@ function Slider() {
             transform: `translate(${(1 - index) * 105}%)`,
           }}
         >
-          <div className="h-20 bg-pink-200 mb-4"></div>
+          <div className="h-24 bg-pink-200 mb-4">
+            <img
+              className="bg-cover h-[100%] w-[100%]"
+              src="emojis.jpg"
+              alt="Artificial Intelligence"
+            />
+          </div>
           <p className="text-sm font-semibold text-stone-500 duration-500">
             Choose a system that collect the best user ratings. Zendesk is the
             leader on the G2 platform
@@ -64,7 +72,13 @@ function Slider() {
             transform: `translate(${(2 - index) * 105}%)`,
           }}
         >
-          <div className="h-20 bg-blue-200 mb-4"></div>
+          <div className="h-24 bg-blue-200 mb-4">
+            <img
+              className="bg-cover h-[100%] w-[100%]"
+              src="ai.jpg"
+              alt="Artificial Intelligence"
+            />
+          </div>
           <p className="text-sm font-semibold text-stone-500">
             How does artificial intelligence help serve customers and support
             employees?

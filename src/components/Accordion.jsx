@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AccordionItem from "./AccordionItem";
+import { faqs } from "../data/data";
 
 function Accordion() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -10,21 +11,15 @@ function Accordion() {
 
   return (
     <ul className="grid grid-cols-1 w-[90%] mx-auto divide-y">
-      <AccordionItem
-        index={0}
-        onClick={() => handleClickedItem(0)}
-        isOpen={activeIndex === 0}
-      />
-      <AccordionItem
-        index={1}
-        onClick={() => handleClickedItem(1)}
-        isOpen={activeIndex === 1}
-      />
-      <AccordionItem
-        index={2}
-        onClick={() => handleClickedItem(2)}
-        isOpen={activeIndex === 2}
-      />
+      {faqs.map((faq, index) => (
+        <AccordionItem
+          question={faq.question}
+          answer={faq.answer}
+          key={index}
+          isOpen={activeIndex === index}
+          onClick={() => handleClickedItem(index)}
+        />
+      ))}
     </ul>
   );
 }

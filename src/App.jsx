@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="max-w-[120rem] w-[100%] mx-auto px-2">
         <Intro1 />
         <Companies />
         <Operations />
