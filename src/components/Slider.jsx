@@ -1,18 +1,24 @@
 import { useState } from "react";
+import Slide from "./Slide";
+import { slides } from "../data/data";
 
 function Slider() {
-  const [index, setIndex] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(0);
   const [startPosition, setStartPosition] = useState(null);
   const [slideDistance, setSlideDistance] = useState(null);
   const minSlide = 0;
   const maxSlide = 2; // 0 based
 
   const nextSlide = function () {
-    setIndex((index) => (index === maxSlide ? maxSlide : index + 1));
+    setSlideIndex((slideIndex) =>
+      slideIndex === maxSlide ? maxSlide : slideIndex + 1
+    );
   };
 
   const prevSlide = function () {
-    setIndex((index) => (index === minSlide ? minSlide : index - 1));
+    setSlideIndex((slideIndex) =>
+      slideIndex === minSlide ? minSlide : slideIndex - 1
+    );
   };
 
   return (
@@ -30,64 +36,19 @@ function Slider() {
           if (startPosition < 200 && slideDistance > 200) prevSlide();
         }}
       >
-        <div
-          className={`p-4 top-0 left-0 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
-          style={{
-            transform: `translate(${(0 - index) * 105}%)`,
-          }}
-        >
-          <div className="h-24 bg-slate-200 mb-4">
-            <img
-              className="bg-cover h-[100%] w-[100%]"
-              src="lowcode.jpg"
-              alt="Artificial Intelligence"
-            />
-          </div>
-          <p className="text-sm font-semibold text-stone-500">
-            Low-Code platform recommended by specialists. Market analysis
-            results for 2023
-          </p>
-        </div>
-        <div
-          className={`p-4 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
-          style={{
-            transform: `translate(${(1 - index) * 105}%)`,
-          }}
-        >
-          <div className="h-24 bg-pink-200 mb-4">
-            <img
-              className="bg-cover h-[100%] w-[100%]"
-              src="emojis.jpg"
-              alt="Artificial Intelligence"
-            />
-          </div>
-          <p className="text-sm font-semibold text-stone-500 duration-500">
-            Choose a system that collect the best user ratings. Zendesk is the
-            leader on the G2 platform
-          </p>
-        </div>
-        <div
-          className={`p-4 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
-          style={{
-            transform: `translate(${(2 - index) * 105}%)`,
-          }}
-        >
-          <div className="h-24 bg-blue-200 mb-4">
-            <img
-              className="bg-cover h-[100%] w-[100%]"
-              src="ai.jpg"
-              alt="Artificial Intelligence"
-            />
-          </div>
-          <p className="text-sm font-semibold text-stone-500">
-            How does artificial intelligence help serve customers and support
-            employees?
-          </p>
-        </div>
+        {slides.map((data, index) => (
+          <Slide index={index} slideIndex={slideIndex} data={data} />
+        ))}
       </div>
-      <div className="flex justify-center items-center gap-6 bottom-0">
-        <button onClick={prevSlide}>👈</button>
-        <button onClick={nextSlide}>👉</button>
+
+      <div className="flex items-center justify-center gap-2">
+        {slides.map((_, index) => (
+          <span
+            className={`sm:hidden h-1.5 w-1.5 mt-2 rounded-full bg-stone-400 transition-all duration-300 ${
+              slideIndex === index ? "!bg-stone-600 scale-125" : ""
+            }`}
+          ></span>
+        ))}
       </div>
     </>
   );

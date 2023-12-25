@@ -1,4 +1,5 @@
-function AccordionItem({ isOpen, onClick, question, answer }) {
+function AccordionItem({ isOpen, onClick, data }) {
+  const { question, answer } = data;
   return (
     <li className="pt-8 pb-4">
       <div className="grid grid-cols-[1fr_auto] gap-8 items-center justify-between cursor-pointer pb-4">

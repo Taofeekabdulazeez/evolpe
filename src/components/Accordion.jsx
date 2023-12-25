@@ -13,8 +13,7 @@ function Accordion() {
     <ul className="grid grid-cols-1 w-[90%] mx-auto divide-y">
       {faqs.map((faq, index) => (
         <AccordionItem
-          question={faq.question}
-          answer={faq.answer}
+          data={faq}
           key={index}
           isOpen={activeIndex === index}
           onClick={() => handleClickedItem(index)}
