@@ -2,7 +2,7 @@ function Operations() {
   return (
     <section className="pb-[9rem]">
       <div className="w-[85%] mx-auto">
-        <h2 className="text-center text-[2rem] font-semibold mb-8">
+        <h2 className="text-center text-[2rem] font-semibold mb-8 sm:mb-16">
           Get Support at every stage of implementation
         </h2>
         <div className="grid sm:grid-cols-3 sm:gap-8 gap-[6rem]">

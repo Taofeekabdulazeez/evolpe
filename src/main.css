@@ -12,6 +12,7 @@
   html {
     font-family: "DM Sans", sans-serif;
     /* font-family: "Proxima Nova", system-ui, sans-serif; */
+    scroll-behavior: smooth;
   }
 }
 

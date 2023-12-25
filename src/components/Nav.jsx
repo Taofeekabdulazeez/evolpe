@@ -25,13 +25,13 @@ function Nav() {
         <ul className="flex items-center justify-between gap-3">
           <a
             href="#"
-            className="px-[.75rem] py-[.5rem] text-[#5B5675] inset-border inline-block rounded-lg font-medium"
+            className="px-3 py-1.5 text-stone-900 text-[1rem] border-2 border-stone-800 inline-block rounded-lg font-medium"
           >
             Book an appointment
           </a>
           <a
             href="#"
-            className="px-[12px] py-[6px] bg-slate-900 text-red-50 inline-block rounded-lg font-medium"
+            className="px-3 py-1.5 bg-slate-900 text-white border-2 border-slate-900 inline-block rounded-lg font-medium"
           >
             Contact us
           </a>

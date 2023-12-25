@@ -3,7 +3,7 @@ function Intro2() {
     <section className="pb-[9rem]">
       <div className="grid sm:grid-cols-[1fr_.8fr] w-[85%] m-auto max-w-[130rem] items-center gap-20">
         <div>
-          <span className="inline-block bg-[#D995451A] tracking-widest text-[rgb(239,124,0)] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">
+          <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-[.8rem] font-bold rounded-lg mb-4">
             Email efficiency
           </span>
           <h1 className="text-[2rem] sm:text-[3rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
@@ -16,7 +16,7 @@ function Intro2() {
           </p>
           <a
             href="#"
-            className="px-[.75rem] py-[.5rem] text-[#5B5675] inset-border inline-block rounded-lg font-medium"
+            className="px-3 py-1.5 text-stone-900 text-[1rem] border-2 border-stone-800 inline-block rounded-lg font-medium"
           >
             Choose a date
           </a>

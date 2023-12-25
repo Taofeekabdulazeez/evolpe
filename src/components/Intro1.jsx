@@ -3,8 +3,8 @@ function Intro1() {
     <section className="py-[1rem] sm:py-[2rem] sm:pb-[6rem]">
       <div className="grid sm:grid-cols-[1fr_.7fr] w-[85%] m-auto items-center gap-16 sm:gap-9">
         <div>
-          <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-sm font-semibold rounded-lg mb-4">
-            Email efficiency
+          <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-[.8rem] font-bold rounded-lg mb-4">
+            Welcome to evolpe
           </span>
           <h1 className="text-[2.8rem] sm:text-[3.6rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
             Your partner in customer-experience implementations
@@ -15,13 +15,13 @@ function Intro1() {
             architecture services.
           </p>
           <a
-            className="inline-block no-underline mr-3 bg-[#EF7C00] px-4 py-2 rounded-md border-2 border-transparent font-medium text-[1.2rem] text-white"
+            className="inline-block no-underline mr-3 bg-[#EF7C00] px-3 py-1.5 rounded-md border-2 border-[#EF7C00] font-medium text-[1rem] text-white"
             href="#"
           >
             Contact us
           </a>
           <a
-            className="inline-block no-underline px-4 py-2 rounded-md border-2 border-stone-900 font-medium text-[1.2rem]"
+            className="inline-block no-underline px-3 py-1.5 rounded-md border-2 border-stone-900 font-medium text-[1rem]"
             href="#"
           >
             Learn more
