@@ -1,7 +1,7 @@
 function Operations() {
   return (
     <section className="pb-[9rem]">
-      <div className="w-[80%] mx-auto">
+      <div className="w-[85%] mx-auto">
         <h2 className="text-center text-[2rem] font-semibold mb-8">
           Get Support at every stage of implementation
         </h2>
