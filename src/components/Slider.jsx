@@ -7,7 +7,7 @@ function Slider() {
   const [startPosition, setStartPosition] = useState(null);
   const [slideDistance, setSlideDistance] = useState(null);
   const minSlide = 0;
-  const maxSlide = 2; // 0 based
+  const maxSlide = slides.length - 1; // 0 based
 
   const nextSlide = function () {
     setSlideIndex((slideIndex) =>
@@ -24,7 +24,7 @@ function Slider() {
   return (
     <>
       <div
-        className={`flex sm:gap-6 relative sm:static h-[13rem]`}
+        className={`flex flex-wrap sm:gap-6 relative sm:static h-[13rem] [&>*]:flex-1`}
         onTouchStart={(event) => {
           setStartPosition(event.touches[0].pageX);
         }}

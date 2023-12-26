@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import Nav from "./Nav";
+import MenuButton from "./MenuButton";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef(null);
 
@@ -36,7 +38,8 @@ function Header() {
       }`}
     >
       <Logo />
-      <Nav />
+      <Nav isOpen={isOpen} />
+      <MenuButton onClick={() => setIsOpen((open) => !open)} />
     </header>
   );
 }

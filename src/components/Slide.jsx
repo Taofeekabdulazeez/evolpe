@@ -3,7 +3,7 @@ function Slide({ index, slideIndex, data }) {
   return (
     <div
       key={index}
-      className={`p-4 top-0 left-0 border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
+      className={`p-4 top-0 left-0 shadow-sm border-2 rounded-md absolute sm:static sm:!translate-x-[0] transition-all duration-500`}
       style={{
         transform: `translate(${(index - slideIndex) * 105}%)`,
       }}
@@ -15,7 +15,7 @@ function Slide({ index, slideIndex, data }) {
           alt="Artificial Intelligence"
         />
       </div>
-      <p className="text-sm font-semibold text-stone-500">{description}</p>
+      <p className="text-sm font-semibold text-[#5B5675]">{description}</p>
     </div>
   );
 }
