@@ -38,7 +38,7 @@ function Header({ isOpen, onClick }) {
     >
       <Logo />
       <Nav isOpen={isOpen} />
-      <MenuButton onClick={onClick} />
+      <MenuButton isOpen={isOpen} onClick={onClick} />
     </header>
   );
 }
