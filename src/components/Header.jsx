@@ -24,7 +24,7 @@ function Header({ isOpen, onClick }) {
 
       return () => observer.disconnect();
     },
-    [isIntersecting]
+    [isIntersecting, ref]
   );
 
   // observer.observe(Header);
