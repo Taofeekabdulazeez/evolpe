@@ -6,7 +6,7 @@ function Nav({ isOpen }) {
     <nav
       className={`${
         isOpen ? "translate-x-[0%]" : ""
-      } fixed translate-x-[-100%] sm:translate-x-0 transition-all sm:static inset-0 top-[60px] bg-white sm:bg-transparent h-[100dvh] sm:h-auto flex flex-col sm:flex-row w-[70%] sm:w-auto sm:flex sm:items-center sm:justify-between gap-24 z-40`}
+      } fixed translate-x-[-100%] sm:translate-x-0 transition-all sm:static inset-0 top-0 bg-white sm:bg-transparent h-[100dvh] sm:h-auto flex flex-col sm:flex-row w-[70%] sm:w-auto sm:flex sm:items-center sm:justify-between gap-24 z-40 pt-[60px] sm:pt-0`}
     >
       <ul className="flex flex-col sm:flex-row items-center sm:gap-6 [&>*]:w-[100%] sm:[&>*]:w-auto divide-y divide-2 sm:divide-none">
         <li>

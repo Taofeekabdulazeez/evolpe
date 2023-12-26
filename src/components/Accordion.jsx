@@ -3,7 +3,7 @@ import AccordionItem from "./AccordionItem";
 import { faqs } from "../data/data";
 
 function Accordion() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(1);
 
   const handleClickedItem = function (index) {
     setActiveIndex((currentIndex) => (currentIndex === index ? null : index));
