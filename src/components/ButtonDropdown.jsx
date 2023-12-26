@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function ButtonDropdown({ children }) {
   return (
-    <button className="flex items-center sm:gap-1 justify-between w-full sm:w-auto">
+    <button className="flex items-center sm:gap-1 justify-between w-full sm:w-auto px-6 py-3 sm:p-0">
       <span className="font-medium text-[#5B5675] text-[.875rem]">
         {children}
       </span>

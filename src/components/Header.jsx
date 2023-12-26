@@ -3,8 +3,7 @@ import Logo from "./Logo";
 import Nav from "./Nav";
 import MenuButton from "./MenuButton";
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+function Header({ isOpen, onClick }) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef(null);
 
@@ -39,7 +38,7 @@ function Header() {
     >
       <Logo />
       <Nav isOpen={isOpen} />
-      <MenuButton onClick={() => setIsOpen((open) => !open)} />
+      <MenuButton onClick={onClick} />
     </header>
   );
 }
