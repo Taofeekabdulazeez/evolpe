@@ -35,7 +35,7 @@ function Intro1() {
               alt="exited customer"
             />
           </div>
-          <div className="w-fit absolute top-[-20%] sm:top-0 sm:left-0 sm:translate-x-[-100%] px-4 py-2 bg-[#FCF5ED] rounded-md shadow-[3px_3px_0px_0px_#000] border-[1px] border-black flex items-center gap-3">
+          <div className="w-fit absolute top-[-20%] right-0 sm:top-0 sm:left-0 sm:translate-x-[-100%] px-4 py-2 bg-[#FCF5ED] rounded-md shadow-[3px_3px_0px_0px_#000] border-[1px] border-black flex items-center gap-3">
             <span className="inline-flex items-center justify-center w-[28px] h-[28px] bg-[#00C2501A] rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
