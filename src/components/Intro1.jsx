@@ -1,15 +1,15 @@
 function Intro1() {
   return (
     <section className="py-[2.4rem] sm:py-[2rem] sm:pb-[6rem]">
-      <div className="grid sm:grid-cols-[1fr_.7fr] gap-[6rem] w-[85%] mx-auto items-center sm:gap-9">
+      <div className="grid sm:grid-cols-[1fr_.7fr] grid-cols-1 gap-[6rem] w-[85%] mx-auto items-center sm:gap-9">
         <div>
           <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-[.8rem] font-bold rounded-lg mb-4">
             Welcome to evolpe
           </span>
-          <h1 className="text-[2.8rem] sm:text-[3.6rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
+          <h1 className="text-[2.5rem] sm:text-[3.6rem] font-medium mb-[24px] text-[#0A071B] leading-[1.25]">
             Your partner in customer-experience implementations
           </h1>
-          <p className="text-[1.25rem] font-medium text-[#5B5675] mb-6">
+          <p className="text-[1.2rem] sm:text-[1.25rem] font-medium text-[#5B5675] mb-6">
             We implement and develop business software across all categories
             ranging from no-code to low-code and highly complex cloud
             architecture services.
