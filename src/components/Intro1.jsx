@@ -1,7 +1,7 @@
 function Intro1() {
   return (
     <section className="py-[2.4rem] sm:py-[2rem] sm:pb-[6rem]">
-      <div className="grid sm:grid-cols-[1fr_.7fr] gap-[6rem] w-[85%] m-auto items-center sm:gap-9">
+      <div className="grid sm:grid-cols-[1fr_.7fr] gap-[6rem] w-[85%] mx-auto items-center sm:gap-9">
         <div>
           <span className="inline-block bg-[#D995451A] tracking-widest text-[#EF7C00] px-[12px] py-[6px] uppercase text-[.8rem] font-bold rounded-lg mb-4">
             Welcome to evolpe
