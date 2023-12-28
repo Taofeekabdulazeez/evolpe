@@ -16,9 +16,7 @@ function AccordionItem({ isOpen, onClick, data }) {
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         }`}
       >
-        <p className="overflow-hidden text-[1.2rem] sm:text-[1.25rem]">
-          {answer}
-        </p>
+        <p className="overflow-hidden text-[.9rem] sm:text-[1rem]">{answer}</p>
       </div>
     </li>
   );
